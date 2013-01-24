@@ -1,5 +1,5 @@
 @ECHO OFF
-title deploy (github.com/midhundevasia/Deploy/)
+title deploy (github.com/midhundevasia/deploy/)
 
 set /p revno="Enter Revision Number: " %=%
 
