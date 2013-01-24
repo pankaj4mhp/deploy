@@ -14,7 +14,7 @@
  * not receive this file, see http://opensource.org/licenses/lgpl-license.php.
  * 
  * @author Midhun Devasia
- *
+ * @version 1.0
  * Requirements : php-cli, svn, php_ssh2
  *
  * Usage 	: php path/to/svn/folder/deploy/deploy.php --revision(-r)
