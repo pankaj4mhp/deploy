@@ -25,7 +25,7 @@ You need to enable all these three things.
 
 1. <code>php-cli</code>      - Enable and test php in console.
     
-2. <code>svn</code>          - Install SNV tool and Add the path to <code>CLASSPATH</code>
+2. <code>svn</code>          - Install SVN tool and Add the path to <code>CLASSPATH</code>
 
 3. <code>php_ssh2</code>     - Download the file and enable in php.ini . You can download it from here http://downloads.php.net/pierre/ 
 
