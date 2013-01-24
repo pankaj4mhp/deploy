@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="deploy :  Upload files to remote server from svn folder." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>deploy</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/midhundevasia/deploy">View on GitHub</a>
+
+          <h1 id="project_title">deploy</h1>
+          <h2 id="project_tagline"> Upload files to remote server from svn folder.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/midhundevasia/deploy/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/midhundevasia/deploy/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>deploy - Upload files to remote server from svn folder.</h2>
+
+<p>Its a CLI application to upload files from local svn repository to remote server. It supports both <code>FTP</code> and <code>sFTP</code>. 
+The current version is only build for <code>SVN Repository</code>. The application will ask for the revision number, once you enter
+that it will connect to server. And fetch the file list from the svn revision log. </p>
+
+<p>Accoding to the svn list, application will start uploading files to the server. 
+<code>ADD/MODIFIED</code> file will be uploaded the exact path. If a new file with a new folder, it will automaticaly create folders
+and place files there. And if the revision log contains a <code>DELETE</code> file, it will delete from the server.</p>
+
+<p>All your uploads will be logged into a text file with revision number. You can set the path of the log file in the <code>
+deploy.ini</code></p>
+
+<h2>Limitations</h2>
+
+<ol>
+<li>Tested only in windows machine.</li>
+<li>Works only with SVN repository. Git will add soon.</li>
+<li>And works only if the local folder is a checkout from TRUNK folder.</li>
+</ol><h2>Requirements</h2>
+
+<p>You need to enable all these three things.</p>
+
+<ol>
+<li><p><code>php-cli</code>      - Enable and test php in console.</p></li>
+<li><p><code>svn</code>          - Install SVN tool and Add the path to <code>CLASSPATH</code></p></li>
+<li><p><code>php_ssh2</code>     - Download the file and enable in php.ini . You can download it from here <a href="http://downloads.php.net/pierre/">http://downloads.php.net/pierre/</a> </p></li>
+</ol><h2>Install</h2>
+
+<ul>
+<li>Download the application ZIP or RAR file and extract it to you SVN local folder. </li>
+<li>Open deploy.ini file and add you user credentials and other settings.</li>
+</ul><h2>Usage</h2>
+
+<p>You can follow two methods to run.</p>
+
+<ol>
+<li>
+<p>Running the php file directly from the console.</p>
+
+<pre>
+php path/to/svn/folder/deploy/deploy.php --revision(-r)
+Example 1   : D:\xmapp\htdocs\myproject\deploy&gt; php deploy.php -r 14550
+Example 2   : D:\xmapp\htdocs\myproject\deploy&gt; php deploy.php -r14550
+</pre>
+</li>
+<li>
+<p>Run the application by double clicking the <code>Batch File</code>.</p>
+
+<pre>
+Enter Revision Number: 14550
+</pre>
+</li>
+</ol><h2>Version</h2>
+
+<p>1.0 </p>
+
+<ul>
+<li>First Release</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">deploy maintained by <a href="https://github.com/midhundevasia">midhundevasia</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
