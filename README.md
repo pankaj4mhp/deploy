@@ -1,4 +1,4 @@
-##<code>deploy</code> - Upload files to remote server from svn folder.
+##deploy - Upload files to remote server from svn folder.
 
 Its a CLI application to upload files from local svn repository to remote server. It supports both <code>FTP</code> and <code>sFTP</code>. 
 The current version is only build for <code>SVN Repository</code>. The application will ask for the revision number, once you enter
@@ -11,7 +11,7 @@ and place files there. And if the revision log contains a <code>DELETE</code> fi
 All your uploads will be logged into a text file with revision number. You can set the path of the log file in the <code>
 deploy.ini</code>
 
-##<code>Limitations</code>
+##Limitations
 
 
 1. Tested only in windows machine.
@@ -19,7 +19,7 @@ deploy.ini</code>
 3. And works only if the local folder is a checkout from TRUNK folder.
 
 
-##<code>Requirements</code>
+##Requirements
 
 You need to enable all these three things.
 
@@ -30,12 +30,12 @@ You need to enable all these three things.
 3. <code>php_ssh2</code>     - Download the file and enable in php.ini . You can download it from here http://downloads.php.net/pierre/ 
 
 
-##<code>Install</code>
+##Install
 
 * Download the application ZIP or RAR file and extract it to you SVN local folder. 
 * Open deploy.ini file and add you user credentials and other settings.
 
-##<code>Usage</code>
+##Usage
 
 
 You can follow two methods to run.
@@ -57,18 +57,6 @@ You can follow two methods to run.
 
 ##Version
 
-
 1.0 
-* First Release   
 
-
-
-
-
-
-
-
-
-
-
-
+* First Release
